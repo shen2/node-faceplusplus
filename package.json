@@ -1,0 +1,22 @@
+{
+  "name": "faceplusplus",
+  "version": "0.0.1",
+  "description": "a client of faceplusplus.com",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shen2/node-faceplusplus.git"
+  },
+  "author": {
+    "name": "shen2"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shen2/node-faceplusplus/issues"
+  },
+  "dependencies": {
+    "request": "*",
+    "underscore": "*"
+  }
+}
