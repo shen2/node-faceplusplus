@@ -4,14 +4,18 @@ node-faceplusplus
   [![NPM version](https://badge.fury.io/js/faceplusplus.svg)](http://badge.fury.io/js/faceplusplus)
   [![Build Status](https://travis-ci.org/shen2/node-faceplusplus.svg?branch=master)](https://travis-ci.org/shen2/node-faceplusplus)
 
-a node client of faceplusplus.com
+a node client of face++
 
 ## Usage
 
 ### initialize
 ```javascript
 var FacePlusPlus = require('faceplusplus');
-var client = new FacePlusPlus('{{api_key}}', '{{api_secret}}');
+var config = {
+	api_key : '{{api_key}}',
+	api_secret : '{{api_secret}}'
+}
+var client = new FacePlusPlus(config);
 ```
 
 ### basic get/post method

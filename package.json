@@ -1,7 +1,7 @@
 {
   "name": "faceplusplus",
-  "version": "0.0.1",
-  "description": "a client of faceplusplus.com",
+  "version": "0.0.2",
+  "description": "a client of face++",
   "main": "index.js",
   "scripts": {},
   "repository": {

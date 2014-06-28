@@ -2,10 +2,11 @@ var querystring = require('querystring'),
 	_ = require('underscore'),
 	request = require('request');
 
-var SDK = function(api_key, api_secret) {
-    if (!api_key || !api_secret) return false;
-    this.api_key = api_key;
-    this.api_secret = api_secret;
+var SDK = function(config) {
+	if (!config || !config.api_key || !config.api_secret)
+		return false;
+	this.api_key = config.api_key;
+	this.api_secret = config.api_secret;
 };
 
 SDK.prototype.apiUrl = function(path){
