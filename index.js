@@ -9,7 +9,7 @@ var SDK = function(api_key, api_secret) {
 };
 
 SDK.prototype.apiUrl = function(path){
-	return 'http://apicn.faceplusplus.com/v2/' + path;
+	return 'https://apicn.faceplusplus.com/v2/' + path;
 };
 
 SDK.prototype.get = function(path, data, callback){
@@ -44,7 +44,7 @@ SDK.prototype.postMulti = function(path, data, callback){
 	form.append('api_secret', this.api_secret);
 	_.each(data, function(obj, key){
 		form.append(key, obj.value, obj.meta);
-	})
+	});
 };
 
 module.exports = SDK;
