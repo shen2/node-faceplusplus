@@ -13,7 +13,8 @@ a node client of face++
 var FacePlusPlus = require('faceplusplus');
 var config = {
 	api_key : '{{api_key}}',
-	api_secret : '{{api_secret}}'
+	api_secret : '{{api_secret}}',
+	region : '{{region}}' // us or cn - defaults to cn
 }
 var client = new FacePlusPlus(config);
 ```
