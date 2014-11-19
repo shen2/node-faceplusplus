@@ -7,10 +7,11 @@ var SDK = function(config) {
 		return false;
 	this.api_key = config.api_key;
 	this.api_secret = config.api_secret;
+	this.region = config.region ? config.region : "cn";
 };
 
 SDK.prototype.apiUrl = function(path){
-	return 'https://apicn.faceplusplus.com/v2/' + path;
+	return 'https://api' + this.region + '.faceplusplus.com/v2/' + path;
 };
 
 SDK.prototype.get = function(path, data, callback){
